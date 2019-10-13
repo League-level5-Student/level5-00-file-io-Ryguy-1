@@ -17,9 +17,14 @@ import static org.junit.Assert.assertEquals;
  *
  * Challenge: Complete the SaveData class so that the test passes.
  */
-public class Serialization {
+public class Serialization{
 	private static final String DATA_FILE = "src/_04_Serialization/saved.dat";
-
+	
+	public static void main(String[] args) {
+		Serialization serialize = new Serialization();
+		serialize.test();
+	}
+	
 	@Test
 	public void test() {
 		String name = "Jeff";
